@@ -1,14 +1,14 @@
 # depslib dependency file v1.0
-1615305827 source:c:\users\chira\desktop\trees\main.c
+1615308945 source:c:\users\chira\desktop\trees\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"tree.h"
 
-1615305783 source:c:\users\chira\desktop\trees\tree.c
+1615308911 source:c:\users\chira\desktop\trees\tree.c
 	<stdlib.h>
 	<stdio.h>
 	"tree.h"
 
-1615305620 c:\users\chira\desktop\trees\tree.h
+1615308922 c:\users\chira\desktop\trees\tree.h
 

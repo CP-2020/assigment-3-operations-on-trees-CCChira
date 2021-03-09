@@ -11,6 +11,7 @@
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
+				<Option parameters='&quot;input.dat&quot; &quot;output.dat&quot; &quot;swap&quot;' />
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
@@ -31,8 +32,16 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="input.dat" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="output.dat" />
+		<Unit filename="tree.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tree.h">
+			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Extensions />
 	</Project>

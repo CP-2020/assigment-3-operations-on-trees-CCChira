@@ -18,6 +18,14 @@ pNode createTree(FILE *input) {
     }
     return node;
 }
+void deleteTree(pNode root) {
+    if(root == NULL) {
+        return;
+    }
+    deleteTree(root->left);
+    deleteTree(root->right);
+    free(root);
+}
 int maxHeight(pNode root) {
     if(root == NULL)
         return -1;

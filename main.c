@@ -41,5 +41,8 @@ int main(int argc, char **argv)
         swapp(key, root);
         inorder(output, root, 0);
     }
+    deleteTree(root);
+    fclose(input);
+    fclose(output);
     return 0;
 }
