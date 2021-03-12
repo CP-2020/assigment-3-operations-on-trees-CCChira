@@ -20,7 +20,7 @@ int main(int argc, char **argv)
     }
     pNode root = createTree(input);
     if(!strcmp(argv[3], "height")) {
-        fprintf(output, "Height of the tree is: %d\n", maxHeight(root));
+        fprintf(output, "Height of the tree is: %d\n", maxHeight(root) + 1);
     }
     else if(!strcmp(argv[3], "preorder")) {
         preorder(output, root, 0);
