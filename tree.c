@@ -96,3 +96,18 @@ void swapp(char key, pNode root) {
     }
 
 }
+void btlConstruct(pNode root, pNode * head, FILE *output) {
+    if(root == NULL) return;
+    pNode prev = NULL;
+    btlConstruct(root->left, head, output); ///left side
+    if(prev == NULL) {
+        *head = root;
+    }
+    else {
+        root->left = prev; ///left is previous
+        prev->right = root; ///right is next
+    }
+    prev = root;
+    fprintf(output, "%c ", (*head)->id);
+    btlConstruct(root->right, head, output);///right side
+}

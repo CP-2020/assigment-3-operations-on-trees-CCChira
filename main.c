@@ -41,6 +41,11 @@ int main(int argc, char **argv)
         swapp(key, root);
         inorder(output, root, 0);
     }
+    else if(!strcmp(argv[3], "list")) {
+        pNode head = NULL;
+        ///printf("%c ", root->id);
+        btlConstruct(root, &head, output);
+    }
     deleteTree(root);
     fclose(input);
     fclose(output);
