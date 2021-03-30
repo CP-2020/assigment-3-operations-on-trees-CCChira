@@ -1,0 +1,65 @@
+Name,test,PASS/FAIL,points,expected,actual,difference between expected and actual
+CCChira,compile,PASS,0,,
+CCChira,no-warnings,PASS,10,,
+CCChira,no-leaks-no-files,PASS,2,,
+CCChira,    no-leaks-no-function,PASS,1,,
+CCChira,    no-leaks-height,PASS,1,,
+CCChira,  no-leaks-preorder,PASS,1,,
+CCChira,   no-leaks-inorder,PASS,1,,
+CCChira, no-leaks-postorder,PASS,1,,
+CCChira,    no-leaks-leaves,PASS,1,,
+CCChira,      no-leaks-swap,PASS,1,,
+CCChira,      no-leaks-list,PASS,1,,
+CCChira,test-leaves,PASS,10,4,4
+CCChira,no-cppcheck-errors,FAIL,0,,
+CCChira,test-height,FAIL,0,6,"Height of the tree is: 6
+"
+CCChira,test-preorder,FAIL,0,ABDGEFCHIJ,"A
+ B
+  D
+   G
+   E
+    F
+     C
+ H
+  I
+  J
+"
+CCChira,test-inorder,FAIL,0,GDCFEBAIHJ,"    G
+   D
+      C
+     F
+    E
+  B
+ A
+   I
+  H
+   J
+"
+CCChira,test-postorder,FAIL,0,GCFEDBIJHA,"    G
+      C
+     F
+    E
+   D
+  B
+   I
+   J
+  H
+ A
+"
+CCChira,test-swap,FAIL,0,GDECFBAIHJ,"    G
+   D
+      C
+     F
+    E
+  B
+ A
+   I
+  H
+   J
+"
+CCChira,test-list,FAIL,0,ABDGEFCHIJ,G D C F E B A I H J 
+CCChira,test-postfix,FAIL,0,"( ( ( ( 6 + 5 ) - 3 ) * 4 ) + ( 2 + ( 1 - 2 ) ) )
+33",
+Name,Total score,PASS/FAIL,failed-test/reason
+CCChira,30,FAIL,"['no-cppcheck-errors', 'test-height', 'test-preorder', 'test-inorder', 'test-postorder', 'test-swap', 'test-list', 'test-postfix']"
